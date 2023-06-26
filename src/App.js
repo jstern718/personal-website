@@ -5,7 +5,8 @@ import {
 
 import './App.css';
 
-import Resume from "./Resume";
+import Experience from "./Experience";
+import Skills from "./Skills";
 import Projects from "./Projects";
 import Home from "./Home";
 import NavBar from "./NavBar";
@@ -13,11 +14,11 @@ import NavBar from "./NavBar";
 function App() {
   return (
     <div className="App">
-        <p>app</p>
         <BrowserRouter>
             <NavBar />
             <Routes>
-                <Route path="/Resume" element={<Resume/>} />
+                <Route path="/Experience" element={<Experience/>} />
+                <Route path="/Skills" element={<Skills/>} />
                 <Route path="/Projects" element={<Projects/>} />
                 <Route path="/" element={<Home/>} />
             </Routes>

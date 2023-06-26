@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}

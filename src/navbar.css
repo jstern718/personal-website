@@ -1,0 +1,33 @@
+  /* .navbar{
+    background-color:blue;
+  } */
+
+  .navbar-custom{
+    background-color: #69b0c1;
+    display: flex;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
+
+  .navbar-text{
+    color:white;
+    text-decoration: none;
+    border: white solid 1px;
+    padding: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .navbar-brand {
+    color: pink;
+  }
+
+  .navbar-text:hover{
+    text-decoration: underline;
+  }
+
