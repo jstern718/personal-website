@@ -17,10 +17,10 @@ function Experience() {
 
 
     return (
-        <div className="Experience">
+        <div className="Experience p-5">
             <h2>Experience</h2>
             <Job position={position1} firm={firm1} city={city1} dates={dates1} description={description1}/>
-
+            <br/>
             <h4>Prior Experience</h4>
             <Job position={position2} firm={firm2} city={city2} dates={dates2} description={description2}/>
 

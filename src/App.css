@@ -45,3 +45,60 @@
 p{
     margin: 20px;
 }
+
+
+
+.homeNameDiv{
+
+}
+
+.homeNameTextDiv{
+
+}
+
+
+.SchoolCard{
+    opacity: 70%;
+}
+.SkillCard{
+    opacity: 50%;
+}
+.SkillType{
+    opacity: 50%;
+}
+.JobCard{
+    opacity: 70%;
+}
+.ProjectCard{
+    background-color: rgba(255,255,255,0.5);
+}
+ProjectCardBody{
+    opacity: 100%;
+}
+
+
+.schoolText{
+    font-size: small;
+}
+
+.Projects{
+    background-image: url("./LicDarkEdited.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Home{
+    background-image: url("./LicEdited.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Experience{
+    background-image: url("./LicRedEdited.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body{
+
+}

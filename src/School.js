@@ -1,12 +1,13 @@
 import React from "react"
 
-function School({school, city, degree, date}) {
+function School({school, city, degree, date, image}) {
 
     return (
-      <div className="card m-4">
+      <div className="card SchoolCard mt-3 mb-4 mx-2 d-flex flex-column flex-fill">
             <div className="card-body">
-                <h6 className="card-title mt-2 mb-2"><span className="fw-bold">{school}</span> -- {city}</h6>
-                <p className="card-text mb-0 text-start">{degree} -- {date}</p>
+                <h6 className="card-title mt-2 mb-0"><span className="fw-bold">{school}</span></h6>
+                <p className="card-text m-0">{city}</p>
+                <p className="card-text schoolText mb-0 mt-2">{degree} <br/> {date}</p>
             </div>
       </div>
     );

@@ -9,11 +9,14 @@ function skillFunc(x){
 function Skills({skillType, skills}) {
     // console.log("skills", skills);
     return (
-      <div className="col-3 card m-2 p-4 d-flex flex-column flex-fill">
+      <div className="col-4 card m-2 p-2 d-flex flex-column flex-fill SkillType">
         <h5>{skillType}</h5>
-        <ul className="text-start">
-            {skills.map(skillFunc)}
-        </ul>
+        <div className="SkillCard">
+            <ul className="text-start">
+                {skills.map(skillFunc)}
+            </ul>
+        </div>
+
       </div>
     );
   }
