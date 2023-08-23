@@ -21,6 +21,7 @@
     margin-bottom: 0px;
     flex-direction: row;
     text-align: left;
+
   }
 
   .navbar-brand {
@@ -28,6 +29,19 @@
   }
 
   .navbar-text:hover{
-    text-decoration: underline;
+    /* box-shadow: 2px -5px 5px pink; */
+    /* box-shadow: -2px 5px 5px lightblue; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 7px 15px -3px inset, rgba(0, 0, 0, 0.3) 0px 4px 9px -4px inset;
+    text-shadow: 1px 1px 2px #00748B;
+  }
+
+  .active{
+    /* border-bottom: solid 2px #00468B; */
+    box-shadow: 0px 5px #00468B;
+  }
+
+  .active:hover{
+    box-shadow: 0px 5px #00468B, rgba(50, 50, 93, 0.25) 0px 7px 15px -3px inset, rgba(0, 0, 0, 0.3) 0px 4px 9px -4px inset;
+    text-shadow: 1px 1px 2px #00748B;
   }
 
