@@ -13,23 +13,6 @@
   }
 }
 
-/* @media (min-width: 992px){
-    #buttonChange{
-        --screen: "large";
-    }
-
-}
-
-@media (max-width: 991.98px){
-    #buttonChange{
-        --screen: null;
-    }
-}
-
-p::before{
-    content: let(--screen);
-} */
-
 .front{
     border-left: none;
 }
@@ -100,19 +83,19 @@ p{
 }
 
 .Projects{
-    background-image: url("./LicDarkEdited.png");
+    background-image: url("./LicDarkEdited.heic");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .Home{
-    background-image: url("./LicEdited.png");
+    background-image: url("./LicEdited.heic");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .Experience{
-    background-image: url("./LicRedEdited.png");
+    background-image: url("./LicRedEdited.heic");
     background-size: cover;
     background-repeat: no-repeat;
 }
