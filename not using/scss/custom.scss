@@ -1,0 +1,13 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@include media-breakpoint-uo(xs) {
+        .custom-class{
+            { .nothing }
+        }
+    }
+
+@include media-breakpoint-up(lg) {
+        .custom-class{
+            class: btn-group
+        }
+    }

@@ -5,7 +5,7 @@ import {
 
 import './App.css';
 
-import Experience from "./Experience";
+import Jobs from "./Jobs";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Home from "./Home";
@@ -17,7 +17,7 @@ function App() {
         <BrowserRouter>
             <NavBar />
             <Routes>
-                <Route path="/Experience" element={<Experience/>} />
+                <Route path="/Jobs" element={<Jobs/>} />
                 <Route path="/Skills" element={<Skills/>} />
                 <Route path="/Projects" element={<Projects/>} />
                 <Route path="/" element={<Home/>} />

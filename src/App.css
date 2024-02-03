@@ -13,6 +13,32 @@
   }
 }
 
+/* @media (min-width: 992px){
+    #buttonChange{
+        --screen: "large";
+    }
+
+}
+
+@media (max-width: 991.98px){
+    #buttonChange{
+        --screen: null;
+    }
+}
+
+p::before{
+    content: let(--screen);
+} */
+
+.front{
+    border-left: none;
+}
+
+.grp{
+    margin-right: -3px;
+    margin-left: -3px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -47,16 +73,6 @@ p{
 }
 
 
-
-.homeNameDiv{
-
-}
-
-.homeNameTextDiv{
-
-}
-
-
 .SchoolCard{
     opacity: 70%;
 }
@@ -64,18 +80,20 @@ p{
     opacity: 50%;
 }
 .SkillType{
-    opacity: 50%;
+    opacity: 60%;
+    color: black;
 }
 .JobCard{
     opacity: 70%;
 }
-.ProjectCard{
-    background-color: rgba(255,255,255,0.5);
-}
-ProjectCardBody{
-    opacity: 100%;
-}
 
+.card-caption{
+    padding: 3%;
+    background:dimgrey;
+    color: white;
+    opacity: 65%;
+
+}
 
 .schoolText{
     font-size: small;
@@ -99,6 +117,34 @@ ProjectCardBody{
     background-repeat: no-repeat;
 }
 
-body{
 
+
+.full-card{
+    object-fit:fill;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-image{
+    border-bottom: gray 1px transparent;
+}
+
+.card-img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    object-fit: cover;
+}
+
+.card-caption{
+    object-fit: cover;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.carousel-control-next{
+    z-index: 100;
+}
+
+.buttonClass{
+    background-color:aliceblue;
 }

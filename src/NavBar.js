@@ -6,7 +6,7 @@ function NavBar() {
     return (
         <nav className="NavBar navbar-dark bg-dark navbar-expand-lg navbar navbar-custom container-fluid justify-content-start">
             <NavLink to="/" className={({ isActive }) => isActive ? "active navbar-text" : "navbar-text"}> Home </NavLink>
-            <NavLink to="/Experience" className="navbar-text"> Experience </NavLink>
+            <NavLink to="/Jobs" className="navbar-text"> Experience </NavLink>
             <NavLink to="/Projects" className="navbar-text"> Projects </NavLink>
         </nav>);
   }
