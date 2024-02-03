@@ -83,19 +83,19 @@ p{
 }
 
 .Projects{
-    background-image: url("./LicDarkEdited.heic");
+    background-image: url("./LicDarkEdited.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .Home{
-    background-image: url("./LicEdited.heic");
+    background-image: url("./LicEdited.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .Experience{
-    background-image: url("./LicRedEdited.heic");
+    background-image: url("./LicRedEdited.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 
-let addressa1 = "./jobly_screenshot1.heic";
-let addressb1 = "./jobly_screenshot2.heic";
+let addressa1 = "./jobly_screenshot1.jpg";
+let addressb1 = "./jobly_screenshot2.jpg";
 let title1 = "Jobly";
 let text1 = `Fullstack job search, matching and application app using Node,
 Javascript, Express and SQL on the backend, and Javascript, React and SQL on
@@ -12,8 +12,8 @@ let repository1a = "https://github.com/jstern718/react-jobly";
 let repository1b = "https://github.com/jstern718/express-jobly";
 let website1 = "https://jstern-jobly-frontend.surge.sh/";
 
-let addressa2 = "./warbler_screenshot1.heic";
-let addressb2 = "./warbler_screenshot2.heic";
+let addressa2 = "./warbler_screenshot1.jpg";
+let addressb2 = "./warbler_screenshot2.jpg";
 let title2 = "Warbler";
 let text2 = `Fullstack social networking app and Twitter clone using Python,
             Flask, SQL and SQLAlchemy for the backend; Jinja templating for the
