@@ -4,9 +4,9 @@ import ProjectCard from "./ProjectCard";
 let addressa1 = "./jobly_screenshot1.jpg";
 let addressb1 = "./jobly_screenshot2.jpg";
 let title1 = "Jobly";
-let text1 = `Fullstack job search, matching and application app using Node,
-Javascript, Express and SQL on the backend, and Javascript, React and SQL on
-the frontend. Testing via SuperTest.`;
+let text1 = `Fullstack job search app written in Javascript, using Node,
+Express and SQL on the backend, and React and SQL on the frontend.
+Testing via SuperTest.`;
 let repository0a = "https://github.com/jstern718";
 let repository1a = "https://github.com/jstern718/react-jobly";
 let repository1b = "https://github.com/jstern718/express-jobly";
@@ -26,7 +26,7 @@ function Projects() {
     return (
         <div className="Projects p-5">
             <h2>Projects</h2>
-            <div className="row my-4 py-4">
+            <div className="projects-row row my-4 py-4">
                 <ProjectCard oldid="1" addressa={addressa1} addressb={addressb1}
                     title={title1} text={text1} repository0={repository0a}
                     repository1={repository1a} repository2 ={repository1b}

@@ -33,7 +33,7 @@ function ProjectCard({oldid,
 
 
     return (
-        <div className="col-4" >
+        <div className="col-4 fuller-card" >
             <div className="full-card">
                 <div id={id} className="carousel slide card-image" data-ride="carousel">
                     <div className="carousel-inner">
@@ -57,13 +57,13 @@ function ProjectCard({oldid,
                     <h5 className="card-title">{title}</h5>
                     <p className="card-text m-2 text-start">{text}</p>
                     <div className="d-grid gap2 d-md-block">
-                        <div >
+                        <div>
                             {(repository2)
                                 ? <div>
-                                    <div>
-                                        <a href={repository0} type="button" className= "btn btn-outline-dark buttonClass">GitHub Repo:</a>
-                                        <a href={repository1} type="button" className= "btn btn-dark btn-outline-secondary text-light">Frontend</a>
-                                        <a href={repository2} type="button" className= "btn btn-dark btn-outline-secondary text-light">Backend</a>
+                                    <div className="btn-area-a">
+                                        <a href={repository0} type="button" className= "btns-a btn btn-outline-dark buttonClass">GitHub Repo:</a>
+                                        <a href={repository1} type="button" className= "btns-a btn btn-dark btn-outline-secondary text-light">Frontend</a>
+                                        <a href={repository2} type="button" className= "btns-a btn btn-dark btn-outline-secondary text-light">Backend</a>
                                     </div>
                                     <a href={website} type="button" className="btn btn-outline-dark buttonClass mt-2 ml-0 mr-0">Deployed Website</a>
                                   </div>

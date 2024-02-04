@@ -35,7 +35,7 @@ function Home() {
         <div className="homeNameDiv">
             <div className="homeNameTextDiv">
                 <h2>Jonathan Stern</h2>
-                <p>Brooklyn, NY - 201.906.0125 - <a href="jstern.dev@gmail.com" className="text-muted">Email</a> - <a href="https://www.linkedin.com/in/jstern-dev/" className="text-muted">LinkedIn</a> - <a href="https://github.com/jstern718" className="text-muted">GitHub</a></p>
+                <p>Brooklyn, NY - 201.906.0125 - <a href="jstern.dev@gmail.com" className="text-light">Email</a> - <a href="https://www.linkedin.com/in/jstern-dev/" className="text-light">LinkedIn</a> - <a href="https://github.com/jstern718" className="text-light">GitHub</a></p>
                 <div className="text-start">
                     <p className="px-4">Software engineer seeking to put full stack skills to use in a
                         challenging junior engineer role — and to leverage past
@@ -48,7 +48,7 @@ function Home() {
         <br/>
         <div className="row">
             <div className="col-7 my-3 mx-4 p-0">
-                <h4>Skills</h4>
+                <h4 className="text-secondary">Skills</h4>
                 <div className="row">
                     <Skills skillType={skillType1} skills = {skills1} />
                     <Skills skillType={skillType2} skills = {skills2} />
@@ -57,8 +57,8 @@ function Home() {
 
             </div>
             <div className="col-4 my-3">
-                <h4 className="">Education</h4>
-                <div className="">
+                <h4 className="text-secondary">Education</h4>
+                <div className="card-bg ">
                     <School school={school1} city={city1} degree={degree1} date={date1} />
                     <School school={school2} city={city2} degree={degree2} date={date2} />
                     <School school={school3} city={city3} degree={degree3} date={date3} />

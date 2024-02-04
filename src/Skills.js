@@ -9,7 +9,7 @@ function skillFunc(x){
 function Skills({skillType, skills}) {
     // console.log("skills", skills);
     return (
-      <div className="col-4 card m-2 p-2 d-flex flex-column flex-fill SkillType">
+      <div className="col-4 card-bg m-2 p-2 d-flex flex-column flex-fill SkillType">
         <h5>{skillType}</h5>
         <div className="SkillCard">
             <ul className="text-start">
