@@ -3,6 +3,7 @@
     .App {
         text-align: center;
         font-family: Geneva, Verdana, sans-serif;
+
     }
 
     h2{
@@ -18,6 +19,7 @@
 /**--------------------Home-----------------*/
 
 .home{
+    background-color: gray;
     background-image: url("./images/LicEdited.jpeg");
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -81,6 +83,7 @@ p{
 /**--------------------Experience-----------------*/
 
 .experience{
+    background-color: gray;
     background-image: url("./images/LicRedEdited.jpeg");
     background-size: cover;
 }
@@ -111,6 +114,7 @@ p{
 /**--------------------Projects-----------------*/
 
 .projects{
+    background-color: gray;
     background-image: url("./images/LicDarkEdited.jpeg");
     background-size: cover;
     padding: 2%;
