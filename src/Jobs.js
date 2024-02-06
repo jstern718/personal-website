@@ -1,13 +1,14 @@
 import React from "react";
-import Job from "./JobCard";
+import JobsPageLarge from "./JobsPageLarge";
+import JobsPageSmall from "./JobsPageSmall";
 
-function Jobs() {
+function Jobs(screenSize) {
 
-    let position1 = "Software Engineering Intern";
-    let firm1 = "Evlos Technology";
-    let city1 = "remote";
-    let dates1 = "Dec 2023 - Present";
-    let description1 = [`Designed and built an SQL database with model data
+    const position1 = "Software Engineering Intern";
+    const firm1 = "Evlos Technology";
+    const city1 = "remote";
+    const dates1 = "Dec 2023 - Present";
+    const description1 = [`Designed and built an SQL database with model data
                         accessible via an API implemented in Express and a
                         frontend built in React.`,
                         `Used MUI to design model components with a uniform
@@ -15,11 +16,11 @@ function Jobs() {
                         information in an easily intelligible manner.`
                        ];
 
-    let position2 = "Software Engineer Intern";
-    let firm2 = "Rithm School";
-    let city2 = "remote";
-    let dates2 = "July 2023";
-    let description2 = [`Resolved complex bugs in Learning Information System,
+    const position2 = "Software Engineer Intern";
+    const firm2 = "Rithm School";
+    const city2 = "remote";
+    const dates2 = "July 2023";
+    const description2 = [`Resolved complex bugs in Learning Information System,
                         an adaptable, class-based Django application serving
                         thousands of students and teachers across schools and
                         companies.`,
@@ -34,11 +35,11 @@ function Jobs() {
                         integration to notify users of overdue assignments.`
                        ];
 
-    let position3 = "Associate Attorney (Litigation)";
-    let firm3 = "Fleming Ruvoldt PLLC";
-    let city3 = "New York, NY";
-    let dates3 = "May 2016 - March 2020";
-    let description3 = [`Identified unexpected risks in complex white-collar
+    const position3 = "Associate Attorney (Litigation)";
+    const firm3 = "Fleming Ruvoldt PLLC";
+    const city3 = "New York, NY";
+    const dates3 = "May 2016 - March 2020";
+    const description3 = [`Identified unexpected risks in complex white-collar
                         prosecutions and advised clients on how to avoid them,
                         including by discovering exposure to obscure trafficking
                         charges, enabling clients to prepare a defense.`,
@@ -56,20 +57,19 @@ function Jobs() {
                         and working w/ IT teams and programmers to fix bugs.`
                        ];
 
+    const props = {position1, firm1, city1, dates1, description1,
+                   position2, firm2, city2, dates2, description2,
+                   position3, firm3, city3, dates3, description3}
 
-
-    return (
-        <div className="Experience p-5">
-            <h2>Experience</h2>
-            <Job position={position1} firm={firm1} city={city1} dates={dates1} description={description1}/>
-            <br/>
-            <Job position={position2} firm={firm2} city={city2} dates={dates2} description={description2}/>
-            <br/>
-            <h4>Prior Experience</h4>
-            <Job position={position3} firm={firm3} city={city3} dates={dates3} description={description3}/>
-
-        </div>
-    );
+    if (screenSize === 'large'){
+        return (
+            <JobsPageLarge props={props}/>
+        );
+    } else{
+        return(
+            <JobsPageSmall props={props}/>
+        )
+    }
 }
 
 export default Jobs;

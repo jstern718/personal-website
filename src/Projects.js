@@ -22,22 +22,48 @@ let repository0b = "https://github.com/jstern718/warbler";
 let website2 = "https://jstern-warbler.onrender.com/";
 
 
-function Projects() {
-    return (
-        <div className="Projects p-5">
-            <h2>Projects</h2>
-            <div className="projects-row row my-4 py-4">
-                <ProjectCard oldid="1" addressa={addressa1} addressb={addressb1}
-                    title={title1} text={text1} repository0={repository0a}
-                    repository1={repository1a} repository2 ={repository1b}
-                    website={website1}/>
-                <ProjectCard oldid="2" addressa={addressa2} addressb={addressb2}
-                    title={title2} text={text2} repository0={repository0b}
-                    website={website2}/>
-            </div>
-        </div>
+function Projects(screenSize) {
 
-    );
+    const projectsScreenSize = screenSize.screenSize;
+    console.log("projectsScreenSize", projectsScreenSize)
+
+    if (projectsScreenSize === 'large'){
+        return (
+            <div className="projects">
+                <div className="projects-row">
+                    <div className="fuller-card-lg">
+                        <ProjectCard oldid="1" addressa={addressa1} addressb={addressb1}
+                            title={title1} text={text1} repository0={repository0a}
+                            repository1={repository1a} repository2 ={repository1b}
+                            website={website1}/>
+                    </div>
+                    <div className="fuller-card-lg">
+                        <ProjectCard oldid="2" addressa={addressa2} addressb={addressb2}
+                            title={title2} text={text2} repository0={repository0b}
+                            website={website2}/>
+                    </div>
+                </div>
+            </div>
+
+        );
+    }
+    else{
+        return (
+            <div className="projects">
+                    <div className="fuller-page-sm">
+                        <ProjectCard oldid="1" addressa={addressa1} addressb={addressb1}
+                            title={title1} text={text1} repository0={repository0a}
+                            repository1={repository1a} repository2 ={repository1b}
+                            website={website1}/>
+                    </div>
+                    <div className="fuller-page-sm">
+                        <ProjectCard oldid="2" addressa={addressa2} addressb={addressb2}
+                            title={title2} text={text2} repository0={repository0b}
+                            website={website2}/>
+                    </div>
+                </div>
+        );
+    }
   }
 
 export default Projects;

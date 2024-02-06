@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-function School({school, city, degree, date, image}) {
+function School({school, city, degree, date}) {
 
     return (
       <div className="card SchoolCard mt-3 mb-4 mx-2 d-flex flex-column flex-fill">

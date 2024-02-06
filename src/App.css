@@ -1,78 +1,60 @@
-.App {
-  text-align: center;
+/** ----------------multiple-------------------- */
+
+    .App {
+        text-align: center;
+        font-family: Geneva, Verdana, sans-serif;
+    }
+
+    h2{
+        margin-bottom: 2%;
+
+    }
+
+    h3{
+        color: aliceblue;
+        margin: 3%;
+    }
+
+/**--------------------Home-----------------*/
+
+.home{
+    background-image: url("./images/LicEdited.jpeg");
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.homeNameDiv-lg{
+    margin: 0;
+    padding: 4%;
+    width: 95.2%;
+    background:dimgrey;
+    color: white;
+    opacity: 75%;
+    flex-basis: max-content;
+    border-color: gray;
+    border-style: outset;
+    border-width: 0.005em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.front{
-    border-left: none;
-}
-
-.grp{
-    margin-right: -3px;
-    margin-left: -3px;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.btn-primary:active, .btn-primary.active {
-    background: #007299;
-    box-shadow: none;
-}
-
-p{
-    margin: 20px;
+.homeNameDiv-sm{
+    margin: 0;
+    padding: 4%;
+    background:dimgrey;
+    color: white;
+    opacity: 75%;
+    flex-basis: max-content;
+    border-color: gray;
+    border-style: outset;
+    border-width: 0.005em;
 }
 
 .homeNameTextDiv, h2{
-    color: lightGray;
+    color: white;
 }
 
 .SchoolCard{
-    opacity: 70%;
-}
-
-.SkillCard{
-    opacity: 50%;
-}
-
-.SkillType{
-    opacity: 60%;
-    color: black;
-}
-
-.JobCard{
     opacity: 70%;
 }
 
@@ -80,81 +62,170 @@ p{
     font-size: small;
 }
 
-.Projects, .Home, .Experience{
+.SkillCard{
+    opacity: 50%;
+}
+
+.skillType{
+    opacity: 60%;
+    color: black;
+    border-color: whitesmoke;
+    border-style: solid;
+    border-width:0.005em;
+}
+
+p{
+    margin: 20px;
+}
+
+/**--------------------Experience-----------------*/
+
+.experience{
+    background-image: url("./images/LicRedEdited.jpeg");
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
-.Projects{
-    background-image: url("./LicDarkEdited.jpg");
+.job-card-sm{
+    width: 94%;
 }
 
-.Home{
-    background-image: url("./LicEdited.jpg");
-}
-
-.Experience{
-    background-image: url("./LicRedEdited.jpg");
-}
-
-.projects-row{
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: flex-start;
-}
-
-.fuller-card{
-    flex-grow: .1;
-    overflow: hidden;
-    border-radius: 5px;
-    margin: 10px;
-
-}
-
-.full-card{
-    flex-grow: 1;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-bottom: 0px;
-}
-
-fuller-card:nth-last-child(-n+2){
-    margin-top:auto
-
-}
-
-.card-caption, .card-bg, .homeNameDiv{
-    padding: 8%;
-    margin: 0;
-    background:dimgrey;
-    color: white;
-    opacity: 65%;
-    flex-basis: max-content;
-}
-
-card-caption{
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.btns-a{
-    margin-top: 1%;
-    margin-bottom: 2.5%;
-}
-
-.btns.b{
-    padding-top: 10%
+.job-card-lg{
+    width: 33%;
 }
 
 .job-card-bg{
     padding: 3%;
     background:dimgrey;
     color: white;
-    opacity: 100%;
+    opacity: 75%;
+    border-color: gray;
+    border-style: outset;
+    border-width: 0.01em;
+    border-radius: 0%;
 }
 
 .job-text-color{
     color: lightgray;
+}
+
+/**--------------------Projects-----------------*/
+
+.projects{
+    background-image: url("./images/LicDarkEdited.jpeg");
+    background-size: cover;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.projects-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+}
+
+.fuller-card-sm{
+    display: flex;
+    margin-top: 2%;
+    margin-left:2%;
+    margin-right: 2%;
+    margin-bottom: 4%;
+    width: 94%;
+    align-items: center;
+
+}
+
+.fuller-card-lg{
+    display: flex;
+    background-color: dimgray;
+    opacity: 80%;
+    width: 40%;
+    margin-right: 2%;
+    border-radius: 5px;
+    border-color: gray;
+    border-style: outset;
+    border-width: 0.01em;
+
+}
+
+.full-card{
+    border-radius: 5px;
+    margin-bottom: 4%;
+
+}
+
+.card-caption{
+    margin: 0;
+    padding: 4%;
+    background:dimgrey;
+    color: white;
+    opacity: 75%;
+    flex-basis: max-content;
+    border-top-color: gray;
+    border-left-color: gray;
+    border-right-color: gray;
+    border-bottom-color: transparent;
+    border-top-style: outset;
+    border-left-style: outset;
+    border-right-style: outset;
+    border-bottom-style: none;
+    border-top-width: 0.01em;
+    border-left-width: 0.01em;
+    border-right-width: 0.01em;
+    border-bottom-width: 0;
+}
+
+.card-bg{
+
+    margin: 0;
+    padding: 4%;
+    background:dimgrey;
+    color: white;
+    opacity: 75%;
+    flex-basis: max-content;
+    border-color: gray;
+    border-style: outset;
+    border-width: 0.005em;
+}
+
+.card-txt{
+    margin: 4%;
+    padding: 2%
+}
+
+.card-bg{
+    padding: 6%;
+    margin-top: 4%;
+    margin-bottom: 4%
+}
+
+.card-body{
+    padding: 2%;
+}
+
+card-caption{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 8%;
+}
+
+.btns-a{
+    margin-top: 7%;
+    margin-bottom: 2.5%;
+    margin-left: 1px;
+    padding: 3%;
+}
+
+.btns.b{
+    padding-top: 10%
+
+}
+
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
 }
 
 .card-img{
@@ -174,4 +245,9 @@ card-caption{
 
 .buttonClass{
     background-color:aliceblue;
+
+}
+
+.button-space{
+    margin-bottom: 5%;
 }
